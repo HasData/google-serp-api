@@ -1,0 +1,40 @@
+{
+  "name": "@scrapeit-cloud/google-serp-api",
+  "version": "1.0.0",
+  "description": "Real-Time Google Search API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint .",
+    "lint:fix": "./node_modules/.bin/eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Scrapeit-Cloud/google-serp-api.git"
+  },
+  "keywords": [
+    "google",
+    "serp",
+    "api",
+    "scraper",
+    "parser",
+    "keywords",
+    "nodejs",
+    "sdk",
+    "scrapeit"
+  ],
+  "author": "Roman Milyushkevich <roman@scrape-it.cloud>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Scrapeit-Cloud/google-serp-api/issues"
+  },
+  "homepage": "https://github.com/Scrapeit-Cloud/google-serp-api#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "eslint": "^8.21.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "typescript": "^4.7.4"
+  }
+}
