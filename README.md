@@ -1,7 +1,7 @@
 # Google SERP API
 [Scrapeit Cloud](https://scrape-it.cloud/) - Web Scraping API with Proxy Rotation. Get valuable data at scale in HTML format from any website without need for a proxy.
 
-Interface to call [Google SERP API](https://scrape-it.cloud/) easily from Node.
+Interface to call [Google SERP API](https://scrape-it.cloud/google-search-api/) easily from Node.
 
 ## Install
 
