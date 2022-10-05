@@ -29,7 +29,10 @@ class ScrapeitCloud {
       {
         'x-api-key': this.apiKey,
       },
-      params,
+      {
+        ...params,
+        source: 'nodejs_sdk'
+      }
     );
 
     let result = {};
