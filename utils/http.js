@@ -1,23 +1,24 @@
 const http = require('https');
-const nodeUrl = require('url');
 
 const doRequest = (url, headers, params) => {
-  const postData = JSON.stringify(params);
+  const urlParams = new URLSearchParams(params).toString();
 
   const options = {
-    host: nodeUrl.parse(url).hostname,
-    path: nodeUrl.parse(url).path,
-    method: 'POST',
     headers: {
       ...headers,
-      'Content-Type': 'application/json',
-      'Content-Length': Buffer.byteLength(postData),
     },
   };
 
   return new Promise((resolve, reject) => {
-    const req = http.request(options, (res) => {
+    const req = http.get(url + '?' + urlParams, options, (res) => {
       let data = '';
+
+      if (res.statusCode < 200 || res.statusCode > 299) {
+        const error = new Error(`Request failed with status code ${res.statusCode}`)
+        error.response = res
+
+        return reject(error)
+      }
 
       res.on('data', (chunk) => {
         data += chunk;
@@ -25,12 +26,11 @@ const doRequest = (url, headers, params) => {
 
       res.on('end', () => resolve(data));
 
-      res.on('error', (err) => reject(err.message));
+      res.on('error', (err) => reject(err));
     });
 
-    req.on('error', (err) => reject(err.message));
+    req.on('error', (err) => reject(err));
 
-    req.write(postData);
     req.end();
   });
 };
