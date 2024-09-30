@@ -1,0 +1,1 @@
+{"version":3,"file":"const.js","sourceRoot":"","sources":["../const.ts"],"names":[],"mappings":";;;AAAa,QAAA,eAAe,GAAG,yBAAyB,CAAC;AAC5C,QAAA,oBAAoB,GAAG,qBAAqB,CAAC","sourcesContent":["export const HASDATA_API_URL = 'https://api.hasdata.com';\nexport const HASDATA_API_ENDPOINT = '/scrape/google/serp';\n"]}
