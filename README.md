@@ -727,7 +727,6 @@ main();
 ```
 
 
-
 ## Best Practices
 
 ### Optimizing API Calls
