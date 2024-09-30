@@ -1,16 +1,18 @@
 {
   "name": "@scrapeit-cloud/google-serp-api",
-  "version": "1.0.3",
-  "description": "Real-Time Google Search API",
-  "main": "index.js",
+  "version": "1.0.4",
+  "description": "The Google SERP API provides real-time access to structured Google search results, offering no blocks or CAPTCHAs.",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "./node_modules/.bin/eslint .",
-    "lint:fix": "./node_modules/.bin/eslint . --fix"
+    "build": "tsc -p tsconfig.json"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Scrapeit-Cloud/google-serp-api.git"
+    "url": "git+https://github.com/HasData/google-serp-api.git"
+  },
+  "engines": {
+    "node": ">=18.2.0"
   },
   "keywords": [
     "google",
@@ -23,15 +25,14 @@
     "sdk",
     "scrapeit"
   ],
-  "author": "Roman Milyushkevich <roman@scrape-it.cloud>",
+  "author": "Roman Milyushkevich <roman@hasdata.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Scrapeit-Cloud/google-serp-api/issues"
+    "url": "https://github.com/HasData/google-serp-api/issues"
   },
-  "homepage": "https://github.com/Scrapeit-Cloud/google-serp-api#readme",
+  "homepage": "https://github.com/HasData/google-serp-api#readme",
   "devDependencies": {
-    "eslint": "^8.21.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.26.0"
+    "@types/node": "^22.7.4",
+    "typescript": "5.6.2"
   }
 }

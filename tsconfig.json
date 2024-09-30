@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": true,
+    "module": "commonjs",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "pretty": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "incremental": true,
+    "newLine": "LF",
+    "rootDir": ".",
+    "outDir": "build",
+    "target": "ES2020",
+    "lib": [
+      "ES2020"
+    ],
+    "skipLibCheck": true,
+    "noUnusedParameters": true,
+    "removeComments": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+  },
+  "exclude": [
+    "node_modules",
+    "build"
+  ],
+  "include": [
+    "./**/*.ts",
+    "*.ts",
+  ]
+}
